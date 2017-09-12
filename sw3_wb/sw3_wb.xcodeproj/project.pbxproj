@@ -8,19 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CBE939D01F68914A00D45893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE939CF1F68914A00D45893 /* AppDelegate.swift */; };
-		CBE939D21F68914A00D45893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE939D11F68914A00D45893 /* ViewController.swift */; };
-		CBE939D51F68914B00D45893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE939D31F68914B00D45893 /* Main.storyboard */; };
 		CBE939D71F68914B00D45893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE939D61F68914B00D45893 /* Assets.xcassets */; };
-		CBE939DA1F68914B00D45893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE939D81F68914B00D45893 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CBE939CC1F68914A00D45893 /* sw3_wb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sw3_wb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE939CF1F68914A00D45893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBE939D11F68914A00D45893 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBE939D41F68914B00D45893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBE939D61F68914B00D45893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CBE939D91F68914B00D45893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBE939DB1F68914B00D45893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,10 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				CBE939CF1F68914A00D45893 /* AppDelegate.swift */,
-				CBE939D11F68914A00D45893 /* ViewController.swift */,
-				CBE939D31F68914B00D45893 /* Main.storyboard */,
 				CBE939D61F68914B00D45893 /* Assets.xcassets */,
-				CBE939D81F68914B00D45893 /* LaunchScreen.storyboard */,
 				CBE939DB1F68914B00D45893 /* Info.plist */,
 			);
 			path = sw3_wb;
@@ -90,6 +81,7 @@
 		CBE939C41F68914A00D45893 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WB_;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "浩哲 夏";
@@ -124,9 +116,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE939DA1F68914B00D45893 /* LaunchScreen.storyboard in Resources */,
 				CBE939D71F68914B00D45893 /* Assets.xcassets in Resources */,
-				CBE939D51F68914B00D45893 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,31 +127,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE939D21F68914A00D45893 /* ViewController.swift in Sources */,
 				CBE939D01F68914A00D45893 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CBE939D31F68914B00D45893 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBE939D41F68914B00D45893 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CBE939D81F68914B00D45893 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBE939D91F68914B00D45893 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CBE939DC1F68914B00D45893 /* Debug */ = {
@@ -261,12 +231,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = Q9FQ8LK3ZQ;
 				INFOPLIST_FILE = sw3_wb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IOS.sw3-wb";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -274,12 +246,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = Q9FQ8LK3ZQ;
 				INFOPLIST_FILE = sw3_wb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IOS.sw3-wb";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
