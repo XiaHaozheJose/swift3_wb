@@ -16,6 +16,7 @@
 		CBE93A1D1F6897B100D45893 /* WB_DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE93A1C1F6897B100D45893 /* WB_DiscoverViewController.swift */; };
 		CBE93A1F1F6897BB00D45893 /* WB_MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE93A1E1F6897BB00D45893 /* WB_MessageViewController.swift */; };
 		CBE93A211F6897C400D45893 /* WB_ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE93A201F6897C400D45893 /* WB_ProfileViewController.swift */; };
+		CBE93A251F689B3600D45893 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE93A241F689B3600D45893 /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CBE93A1C1F6897B100D45893 /* WB_DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WB_DiscoverViewController.swift; sourceTree = "<group>"; };
 		CBE93A1E1F6897BB00D45893 /* WB_MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WB_MessageViewController.swift; sourceTree = "<group>"; };
 		CBE93A201F6897C400D45893 /* WB_ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WB_ProfileViewController.swift; sourceTree = "<group>"; };
+		CBE93A241F689B3600D45893 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,95 +86,17 @@
 		CBE939FC1F6896DC00D45893 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CBE939FD1F6896DC00D45893 /* Discover */,
-				CBE939FE1F6896DC00D45893 /* Home */,
-				CBE939FF1F6896DC00D45893 /* Main */,
-				CBE93A001F6896DC00D45893 /* Message */,
-				CBE93A011F6896DC00D45893 /* Profile */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		CBE939FD1F6896DC00D45893 /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Discover;
-			sourceTree = "<group>";
-		};
-		CBE939FE1F6896DC00D45893 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		CBE939FF1F6896DC00D45893 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		CBE93A001F6896DC00D45893 /* Message */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		CBE93A011F6896DC00D45893 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		CBE93A021F6896DC00D45893 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				CBE93A031F6896DC00D45893 /* Discover */,
-				CBE93A041F6896DC00D45893 /* Home */,
-				CBE93A051F6896DC00D45893 /* Main */,
-				CBE93A061F6896DC00D45893 /* Message */,
-				CBE93A071F6896DC00D45893 /* Profile */,
+				CBE93A231F689B1200D45893 /* Tool */,
+				CBE93A221F689B0600D45893 /* Extension */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		CBE93A031F6896DC00D45893 /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Discover;
-			sourceTree = "<group>";
-		};
-		CBE93A041F6896DC00D45893 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		CBE93A051F6896DC00D45893 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		CBE93A061F6896DC00D45893 /* Message */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		CBE93A071F6896DC00D45893 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		CBE93A081F6896DC00D45893 /* View */ = {
@@ -232,48 +156,23 @@
 		CBE93A0E1F6896DC00D45893 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				CBE93A0F1F6896DC00D45893 /* Discover */,
-				CBE93A101F6896DC00D45893 /* Home */,
-				CBE93A111F6896DC00D45893 /* Main */,
-				CBE93A121F6896DC00D45893 /* Message */,
-				CBE93A131F6896DC00D45893 /* Profile */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
 		};
-		CBE93A0F1F6896DC00D45893 /* Discover */ = {
+		CBE93A221F689B0600D45893 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CBE93A241F689B3600D45893 /* Bundle+Extension.swift */,
 			);
-			path = Discover;
+			path = Extension;
 			sourceTree = "<group>";
 		};
-		CBE93A101F6896DC00D45893 /* Home */ = {
+		CBE93A231F689B1200D45893 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		CBE93A111F6896DC00D45893 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		CBE93A121F6896DC00D45893 /* Message */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		CBE93A131F6896DC00D45893 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBE93A191F68978300D45893 /* WB_BaseViewController.swift in Sources */,
+				CBE93A251F689B3600D45893 /* Bundle+Extension.swift in Sources */,
 				CBE93A211F6897C400D45893 /* WB_ProfileViewController.swift in Sources */,
 				CBE93A171F68973D00D45893 /* WB_NavigationViewController.swift in Sources */,
 				CBE93A1D1F6897B100D45893 /* WB_DiscoverViewController.swift in Sources */,
