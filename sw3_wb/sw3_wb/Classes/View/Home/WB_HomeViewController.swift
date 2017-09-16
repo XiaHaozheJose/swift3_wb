@@ -17,21 +17,24 @@ class WB_HomeViewController: WB_BaseViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: - 监听
+    @objc fileprivate func addFriend(){
+        
+        let vc = WB_DemoViewController();
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
-    */
 
+}
+
+
+// MARK: - UI
+extension WB_HomeViewController{
+    override func setUI(){
+        super.setUI()
+        
+        //左侧NaviItem
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 16, normalColor: UIColor.black, highlightColor: UIColor.orange, target: self, action: #selector(addFriend))
+    }
 }
