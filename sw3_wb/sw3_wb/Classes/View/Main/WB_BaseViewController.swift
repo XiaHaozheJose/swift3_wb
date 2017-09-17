@@ -8,21 +8,25 @@
 
 import UIKit
 
+
 class WB_BaseViewController: UIViewController {
 
     // MARK: - 自定义控件
     
     var tableView : UITableView?
     
+    var refreshControl: UIRefreshControl?
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        loadData()
+        automaticallyAdjustsScrollViewInsets = false
         // Do any additional setup after loading the view.
     }
     
     //加载数据, 具体实现有子类负责
     func loadData(){
-        
+        refreshControl?.endRefreshing()
     }
    
 
@@ -36,6 +40,17 @@ extension WB_BaseViewController{
         tableView?.delegate = self
         tableView?.dataSource = self
         view.addSubview(tableView!)
+        let naviBarHeight = self.navigationController?.navigationBar.bounds.height ?? 0
+        let tabBarHeight  = self.tabBarController?.tabBar.bounds.height ?? 0
+        let statusHeight = UIApplication.shared.statusBarFrame.height
+        tableView?.contentInset = UIEdgeInsets(top: naviBarHeight + statusHeight , left: 0, bottom:(naviBarHeight + tabBarHeight), right: 0)
+        
+        refreshControl = UIRefreshControl()
+        tableView?.addSubview(refreshControl!)
+        
+        refreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
+        
+        
     }
 }
 
