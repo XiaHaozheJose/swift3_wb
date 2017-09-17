@@ -26,6 +26,7 @@ class WB_MainViewController: UITabBarController {
         setChildController()
         setComposeButton()
     }
+    
 
     // MARK: - 监听方法
    @objc fileprivate  func composeStatus(){

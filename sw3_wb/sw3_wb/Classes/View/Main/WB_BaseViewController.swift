@@ -12,7 +12,7 @@ class WB_BaseViewController: UIViewController {
 
     // MARK: - 自定义控件
     
-
+    var tableView : UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,10 @@ class WB_BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //加载数据, 具体实现有子类负责
+    func loadData(){
+        
+    }
    
 
 }
@@ -28,5 +32,19 @@ class WB_BaseViewController: UIViewController {
 extension WB_BaseViewController{
     func setUI(){
         view.backgroundColor = UIColor.randomColor()
+        tableView = UITableView(frame: view.bounds,style:.plain)
+        tableView?.delegate = self
+        tableView?.dataSource = self
+        view.addSubview(tableView!)
+    }
+}
+
+extension WB_BaseViewController: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
 }
