@@ -10,12 +10,16 @@ import UIKit
 
 class WB_BaseViewController: UIViewController {
 
+    // MARK: - 自定义控件
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
         // Do any additional setup after loading the view.
     }
-
+    
    
 
 }

@@ -11,7 +11,7 @@ import UIKit
 extension UIBarButtonItem{
     
     
-    convenience init(title: String , fontSize :CGFloat , normalColor :UIColor , highlightColor :UIColor , target : Any? , action :Selector){
+    convenience init(title: String , fontSize :CGFloat = 16, normalColor :UIColor , highlightColor :UIColor , target : Any? , action :Selector){
         let btn = UIButton()
         btn.setTitle(title, for: .normal)
         btn.setTitleColor(normalColor, for: .normal)

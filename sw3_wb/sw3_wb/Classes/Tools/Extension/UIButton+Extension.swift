@@ -10,12 +10,13 @@ import UIKit
 
 extension UIButton{
     
-    convenience init(imageName : UIImage , highImageName :UIImage , title : String , bgImageName : UIImage,bgHighImage : UIImage) {
+    convenience init(imageName : UIImage , highImageName :UIImage , title : String , bgImageName : UIImage?,bgHighImage : UIImage?) {
         self.init()
         setImage(imageName, for: .normal)
         setTitle(title, for: .normal)
+        titleLabel?.font = UIFont.systemFont(ofSize: 16)
         setBackgroundImage(bgImageName, for: .normal)
-        setImage(highImageName, for: .selected)
+        setImage(highImageName, for: .highlighted)
         setImage(bgHighImage, for: .selected)
         sizeToFit()
     }
